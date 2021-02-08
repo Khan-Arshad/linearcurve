@@ -12,42 +12,78 @@
     <link rel="stylesheet" href="./styles/utilities.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/scripts.js" defer></script>
+    <script src="./scripts/button.js" defer></script>
+    <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
 
     <title>LinearCurve</title>
   </head>
   <body>
+    <!-- Modal -->
+
+    <div id="myModal" class="modal glass my-5 text-center center">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 class="font2 text-primary">Welcome to Linearcurve Architecture</h1>
+        <p>“Design is a pattern followed by luscious creativity and is purely adored by the imagination that surrounds it… It is a complex prevailed” -author unknown</p>
+       
+      </div>
+    </div>
+
+    <!-- Scroll to top -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">
+      Top
+    </button>
+
     <!-- Navbar -->
 
     <div class="navbar" id="navbar">
       <div class="nav-container flex">
         <a href="index.html" class="logo-a"
-          ><img src="./images/logo.png" alt="logo" class="logo hover"
+          ><img
+            src="./images/linearcurve-logo.png"
+            alt="logo"
+            class="logo hover"
         /></a>
         <div>
           <nav class="social-nav flex">
-            <a href="contact.html" class="btn btn-outline2">Get a quote</a>
+            <a href="contact.html" class="btn btn-outline2 shown"
+              >Get a quote</a
+            >
             <ul>
               <li class="hover">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/linearcurveSA" target="blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
               </li>
               <li class="hover">
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a
+                  href="https://www.instagram.com/linear_curve_sa/?hl=en"
+                  target="blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
               <li class="hover">
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="blank"><i class="fab fa-youtube"></i></a>
               </li>
               <li class="hover">
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
               </li>
             </ul>
           </nav>
-          <nav>
+          <nav class="page-nav flex">
             <ul>
               <li class="hover"><a href="index.html">Home</a></li>
               <li class="hover">
                 <a href="projects.html">Projects & Services</a>
               </li>
               <li class="hover"><a href="contact.html">Contact</a></li>
+              <li>
+                <a href="contact.html" class="btn btn-outline2 hidden-nav"
+                  >Get a quote</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -55,9 +91,9 @@
     </div>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero container slide-in-right">
       <div class="glass">
-        <h1>Our Vision</h1>
+        <h1 class="font2">Our Vision</h1>
         <p>
           Our vision is to continuously promote modern sustainable design
           methods within architecture, in-line with the african vision. Our name
@@ -68,43 +104,33 @@
           technology. Our main vision is to expand human potential and ambition
           by creating suitable comfortable environments for livelihood.
         </p>
-        <a href="contact.html" class="btn hero-button">Learn more</a>
+        <a href="projects.html" class="btn hero-button">Learn more</a>
       </div>
     </section>
 
     <!-- Directors -->
 
-    <section class="directors">
+    <section class="directors container fade-in-fwd">
       <div class="container flex">
         <div class="card flex card-d">
-          <svg
-            width="150"
-            height="150"
-            viewBox="0 0 325 325"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M163 222.001L211 263L208 266.002L163 222.001Z"
-              fill="#EE9B1B"
-            />
-            <path
-              d="M163 222.002L118 266L115 263L163 222.002Z"
-              fill="#EE9B1B"
-            />
-            <path
-              d="M54.882 179.601C54.882 158.922 59.5154 140.231 68.7822 123.529C78.049 107.025 90.8412 94.0015 107.159 84.4574C123.678 75.1121 142.111 70.4394 162.458 70.4394C182.804 70.4394 201.136 75.1121 217.454 84.4574C233.973 94.0015 246.866 107.125 256.133 123.827C265.4 140.529 270.033 159.22 270.033 179.899C270.033 204 250.089 220 250.089 220C252 221.5 235.081 233.087 225.009 242.234C241.729 225.929 250.089 205.35 250.089 180.495C250.089 163.992 246.262 148.98 238.607 135.459C230.951 121.938 220.476 111.3 207.18 103.546C193.884 95.9899 178.977 92.212 162.458 92.212C145.938 92.212 131.031 95.9899 117.735 103.546C104.439 111.3 93.9637 121.938 86.3085 135.459C78.6534 148.98 74.8258 163.992 74.8258 180.495C74.8258 205.549 83.2868 226.128 100.209 242.234C90.1361 233.087 80.265 233.322 74.8258 220C69.588 206.877 54.882 204 54.882 179.601Z"
-              fill="#7D9D92"
-            />
-            <path
-              d="M11 151L23 151L163 313L303 151H313L163 325L11 151Z"
-              fill="black"
-            />
-            <path d="M163 88L173 314H153L163 88Z" fill="black" />
-          </svg>
+          <img src="./images/linearcurve-favicon.png"></img>
 
-          <h1 class="bold md">Mohammed</h1>
-          <h1 class="bold md">Sheik</h1>
+          <h1 class="bold md font2">Muhammad</h1>
+          <h1 class="bold md font2">Jhetam</h1>
+          <h4>Architectural Technologist</h4>
+          <h4>Multi-disciplinary Draughtsman</h4>
+          <hr class="line" />
+          <hr class="line" />
+          <p>
+            Since January 2014, Muhammad Jhetam has attained a number of architectural qualifications while been in the service of 3 recognised architectural companies in Johannesburg and Durban. Since 2020, he has co-founded and directed LinearCurve Architecture with Mohammed Sheik and ever since gained additional experience in management and marketing skills as well as leadership qualities. 
+He has played a part of a number of projects specializing in residential and warehousing. With a positive attitude in the work environment, Muhammad has worked well in teams and individually producing quality services from inception to close out, ranging from timeous deadlines, design, detailing, sustainability and aesthetics. 
+His professional character allows for a smooth transition in gaining potential prospects and producing a professional successful business which ensures an improved architectural environment.
+          </p>
+        </div>
+        <div class="card flex card-d">
+          <img src="./images/linearcurve-favicon.png"></img>
+          <h1 class="bold md font2">Mohammed</h1>
+          <h1 class="bold md font2">Sheik</h1>
           <h4>Senior Professional<br />Architectural Technologist</h4>
           <hr class="line" />
           <hr class="line" />
@@ -129,202 +155,125 @@
             Read more
           </button> -->
         </div>
-        <div class="card flex card-d">
-          <svg
-            width="150"
-            height="150"
-            viewBox="0 0 325 325"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M163 222.001L211 263L208 266.002L163 222.001Z"
-              fill="#EE9B1B"
-            />
-            <path
-              d="M163 222.002L118 266L115 263L163 222.002Z"
-              fill="#EE9B1B"
-            />
-            <path
-              d="M54.882 179.601C54.882 158.922 59.5154 140.231 68.7822 123.529C78.049 107.025 90.8412 94.0015 107.159 84.4574C123.678 75.1121 142.111 70.4394 162.458 70.4394C182.804 70.4394 201.136 75.1121 217.454 84.4574C233.973 94.0015 246.866 107.125 256.133 123.827C265.4 140.529 270.033 159.22 270.033 179.899C270.033 204 250.089 220 250.089 220C252 221.5 235.081 233.087 225.009 242.234C241.729 225.929 250.089 205.35 250.089 180.495C250.089 163.992 246.262 148.98 238.607 135.459C230.951 121.938 220.476 111.3 207.18 103.546C193.884 95.9899 178.977 92.212 162.458 92.212C145.938 92.212 131.031 95.9899 117.735 103.546C104.439 111.3 93.9637 121.938 86.3085 135.459C78.6534 148.98 74.8258 163.992 74.8258 180.495C74.8258 205.549 83.2868 226.128 100.209 242.234C90.1361 233.087 80.265 233.322 74.8258 220C69.588 206.877 54.882 204 54.882 179.601Z"
-              fill="#7D9D92"
-            />
-            <path
-              d="M11 151L23 151L163 313L303 151H313L163 325L11 151Z"
-              fill="black"
-            />
-            <path d="M163 88L173 314H153L163 88Z" fill="black" />
-          </svg>
-
-          <h1 class="bold md">Muhammed</h1>
-          <h1 class="bold md">Jhetam</h1>
-          <h4>Architectural Technologist</h4>
-          <h4>Multi-disciplinary Draughtsman</h4>
-          <hr class="line" />
-          <hr class="line" />
-          <p>
-            Our mission is what drives us to do everything possible to expand
-            human potential.<span id="dots2">...</span
-            ><span id="more2">
-              We do that by creating groundbreaking sport innovations, by making
-              our products more sustainably, by building a creative and diverse
-              global team and by making a positive impact in communities where
-              we live and work.</span
-            >
-          </p>
-          <button onclick="readMore2()" id="moreBtn2" class="btn">
-            Read more
-          </button>
-        </div>
       </div>
     </section>
 
     <!-- Certifications and Philosophy -->
 
-    <section class="cert glass">
-      <div class="container flex">
-        <img src="./images/sacap.png" alt="sacap logo" />
-        <img src="./images/GBCSA.png" alt="gbcsa logo" />
-      </div>
-      <div class="container text-center">
-        <h1 class="text-primary lg bold">Company Philosophy</h1>
-        <p class="text-dark">
-          Our mission is what drives us to deliver more than just quality
-          services, it allows us to contribute to a better future, by providing
-          transformation through excellent teamwork, quality assured
-          sustainability, rigid detailing and management. Our mission is cast on
-          producing professional standards, in design, ethics and customer
-          service as well as to provide valued services that is best suited for
-          finances within a suitable timeframe.
-        </p>
-      </div>
-      <div class="container text-center">
-        <h1 class="text-secondary lg">Company Founding</h1>
-        <p class="text-primary">
-           LinearCurve Architecture was established on 13th July 2020. Amid the
-          Coronavirus pandemic, we developed the company solely based on future
-          betterment. As the world had changed to accommodate the pandemic, we
-          had identified the many problems on the forefront of traditional 
-          architecture. We, as experienced Architectural Technologists have
-          marked progressive solutions on producing sustainability and clever
-          planning on ensuring a better living standard for our clientèle.
-          LinearCurve is situated in two head offices, in two separate provinces
-          to provide a large variety of services to a larger audience of
-          customers.
-        </p>
+    <section class="container cert slide-in-bottom">
+      <div class="glass">
+        <div class="flex">
+          <img src="./images/sacap.png" alt="sacap logo" />
+          <img src="./images/GBCSA.png" alt="gbcsa logo" />
+        </div>
+        <div class="text-center my-3">
+          <h1 class="text-primary lg bold font2">Company Philosophy</h1>
+          <p class="text-dark">
+            Our mission is what drives us to deliver more than just quality
+            services, it allows us to contribute to a better future, by
+            providing transformation through excellent teamwork, quality assured
+            sustainability, rigid detailing and management. Our mission is cast
+            on producing professional standards, in design, ethics and customer
+            service as well as to provide valued services that is best suited
+            for finances within a suitable timeframe.
+          </p>
+        </div>
+        <div class="text-center">
+          <h1 class="text-primary lg bold font2">Company Founding</h1>
+
+          <p class="text-dark text-center">
+            LinearCurve Architecture was established on 13th July 2020. Amid the
+            Coronavirus pandemic, we developed the company solely based on
+            future betterment. As the world had changed to accommodate the
+            pandemic, we had identified the many problems on the forefront of
+            traditional architecture. We, as experienced architectural
+            technologists have marked progressive solutions on producing
+            sustainability and clever planning on ensuring a better living
+            standard for our clientèle. LinearCurve is situated in two head
+            offices, in two separate provinces, to provide a large variety of
+            services to a larger audience of customers.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- Gallery -->
 
-    <section class="gallery">
-      <div class="bss-slides demo1" tabindex="1" autofocus="autofocus">
-        <figure>
-          <img src="./images/1-warehouse/warehouse1.png" width="100%" />
-          <!-- <figcaption>
-            "Medium" by
-            <a href="https://www.flickr.com/photos/thomashawk/14586158819/"
-              >Thomas Hawk</a
-            >.
-          </figcaption> -->
-        </figure>
-        <figure>
-          <img
-            src="./images/2-HouseLatiff/1-01 1-2-houseLatiff .png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/3-HouseNagdee/laundry 1-3-Nagdee.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/4-HouseGovender/LOUNGE1 1-4-govender.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/5-zembezi/north elevation 1-5-zembezi.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/6-HouseFakir/entrance 2 1-6-HouseFakir.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/7-HouseNagdeeOutside/Patio Yard Area 1-7-HouseNagdeeOutside.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/8-HouseNkabinde/1 1-8-HouseNkabinde.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img src="./images/9-IEC/render 108 1-9-IEC.png" width="100%" />
-        </figure>
-        <figure>
-          <img
-            src="./images/10-ResBlocks/Render 1-10-ResBlocks.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/11-SastriGardens/10 1-11-SastriGardens.png"
-            width="100%"
-          />
-        </figure>
-        <figure>
-          <img
-            src="./images/12-UnicitiZululand/Day render 1-12-UnicitiZululand.png"
-            width="100%"
-          />
-        </figure>
+    <section class="gallery container">
+      <div class="gallery-container">
+        <div class="bss-slides demo1" tabindex="1">
+          <figure>
+            <img src="./images/1-warehouse/warehouse1.png" />
+          </figure>
+          <figure>
+            <img src="./images/2-HouseLatiff/1-01 1-2-houseLatiff .png" />
+          </figure>
+          <figure>
+            <img src="./images/3-HouseNagdee/laundry 1-3-Nagdee.png" />
+          </figure>
+          <figure>
+            <img src="./images/4-HouseGovender/LOUNGE1 1-4-govender.png" />
+          </figure>
+          <figure>
+            <img src="./images/5-zembezi/north elevation 1-5-zembezi.png" />
+          </figure>
+          <figure>
+            <img src="./images/6-HouseFakir/entrance 2 1-6-HouseFakir.png" />
+          </figure>
+          <figure>
+            <img
+              src="./images/7-HouseNagdeeOutside/Patio Yard Area 1-7-HouseNagdeeOutside.png"
+            />
+          </figure>
+          <figure>
+            <img src="./images/8-HouseNkabinde/1 1-8-HouseNkabinde.png" />
+          </figure>
+          <figure>
+            <img src="./images/9-IEC/render 108 1-9-IEC.png" />
+          </figure>
+          <figure>
+            <img src="./images/10-ResBlocks/Render 1-10-ResBlocks.png" />
+          </figure>
+          <figure>
+            <img src="./images/11-SastriGardens/10 1-11-SastriGardens.png" />
+          </figure>
+          <figure>
+            <img
+              src="./images/12-UnicitiZululand/Day render 1-12-UnicitiZululand.png"
+            />
+          </figure>
+        </div>
       </div>
-      <!-- bss-slides
-      <script src="https://leemark.github.io/better-simple-slideshow/demo/js/hammer.min.js"></script>
-      for swipe support on touch interfaces -->
     </section>
 
     <!-- Services -->
 
-    <section class="services flex">
+    <section class="services flex container">
       <div class="container">
-        <h1 class="text-primary xl bold text-center">Services</h1>
-        <div class="service-cards text-light text-center flex">
+        <h1 class="text-primary xl bold text-center font2">Services</h1>
+        <div class="service-cards text-center flex md">
           <div class="service-card">
-            <i class="fa fa-university fa-8x" aria-hidden="true"></i>
-            <h3 class="md">Architecture</h3>
+            <i class="fa fa-university text-secondary" aria-hidden="true"></i>
+            <h3 class="text-light">Architecture</h3>
           </div>
           <div class="service-card">
-            <i class="fa fa-university fa-8x" aria-hidden="true"></i>
-            <h3 class="md">Design</h3>
+            <i class="fa fa-university text-secondary" aria-hidden="true"></i>
+            <h3 class="text-light">Design</h3>
           </div>
           <div class="service-card">
-            <i class="fa fa-university fa-8x" aria-hidden="true"></i>
-            <h3 class="md">Management</h3>
+            <i class="fa fa-university text-secondary" aria-hidden="true"></i>
+            <h3 class="text-light">Management</h3>
           </div>
         </div>
         <div class="services-button flex">
-          <a href="contact.html" class="btn">Learn more</a>
+          <a href="projects.html" class="btn">Learn more</a>
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
 
-    <section class="testimonials flex">
+    <!-- <section class="testimonials flex">
       <div class="container">
         <h1 class="text-primary xl bold text-center">Testimonials</h1>
         <div class="diamonds flex">
@@ -333,7 +282,7 @@
           <div class="diamond"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer class="footer bg-primary xs">
       <div class="container">
@@ -354,15 +303,10 @@
         </p>
         <div class="flex">
           <p class="text-secondary">
-            <a href="www.arshadk.co.za">Website by ArshadK</a>
+            <a href="www.arshadk.co.za" target="blank">Website by ArshadK</a>
           </p>
-          <p class="counter text-secondary"></p>
         </div>
       </div>
     </footer>
-    <script
-      type="text/javascript"
-      src="./counter/counter.php?page=index"
-    ></script>
   </body>
 </html>

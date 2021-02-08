@@ -1,36 +1,73 @@
+// Modal
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById('myBtn');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0];
+
+// // When the page loads, open the modal
+// window.onLoad = function () {
+//   modal.style.display = 'block';
+// };
+
+document.addEventListener('DOMContentLoaded', function () {
+  modal.style.display = 'block';
+});
+
+// // When the user clicks on the button, open the modal
+// btn.onclick = function () {
+//   modal.style.display = 'block';
+// };
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+
 // Readmore Button
 
-function readMore() {
-  var dots = document.getElementById('dots');
-  var moreText = document.getElementById('more');
-  var btnText = document.getElementById('moreBtn');
+// function readMore() {
+//   var dots = document.getElementById('dots');
+//   var moreText = document.getElementById('more');
+//   var btnText = document.getElementById('moreBtn');
 
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline';
-    btnText.innerHTML = 'Read more';
-    moreText.style.display = 'none';
-  } else {
-    dots.style.display = 'none';
-    btnText.innerHTML = 'Read less';
-    moreText.style.display = 'inline';
-  }
-}
+//   if (dots.style.display === 'none') {
+//     dots.style.display = 'inline';
+//     btnText.innerHTML = 'Read more';
+//     moreText.style.display = 'none';
+//   } else {
+//     dots.style.display = 'none';
+//     btnText.innerHTML = 'Read less';
+//     moreText.style.display = 'inline';
+//   }
+// }
 
-function readMore2() {
-  var dots = document.getElementById('dots2');
-  var moreText = document.getElementById('more2');
-  var btnText = document.getElementById('moreBtn2');
+// function readMore2() {
+//   var dots = document.getElementById('dots2');
+//   var moreText = document.getElementById('more2');
+//   var btnText = document.getElementById('moreBtn2');
 
-  if (dots.style.display === 'none') {
-    dots.style.display = 'inline';
-    btnText.innerHTML = 'Read more';
-    moreText.style.display = 'none';
-  } else {
-    dots.style.display = 'none';
-    btnText.innerHTML = 'Read less';
-    moreText.style.display = 'inline';
-  }
-}
+//   if (dots.style.display === 'none') {
+//     dots.style.display = 'inline';
+//     btnText.innerHTML = 'Read more';
+//     moreText.style.display = 'none';
+//   } else {
+//     dots.style.display = 'none';
+//     btnText.innerHTML = 'Read less';
+//     moreText.style.display = 'inline';
+//   }
+// }
 
 // Gallery
 
