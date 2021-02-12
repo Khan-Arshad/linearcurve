@@ -341,7 +341,7 @@ pre {
 /* Services */
 
 .service-cards {
-  margin-top: 0px !important;
+  margin: 0 auto !important;
   max-width: 900px;
   justify-content: space-between;
   align-items: flex-start;
@@ -349,7 +349,7 @@ pre {
 
 .service-card {
   width: 300px;
-  margin: 40px 30px;
+  margin: 40px auto;
 }
 
 .service-card i {
@@ -358,10 +358,11 @@ pre {
 
 .service-card h3 {
   font-size: 2rem;
+  color: var(--light-color);
 }
 
 .service-card:hover {
-  background-color: #fff;
+  background-color: var(--dark-color);
   color: var(--secondary-color);
   border-radius: 10px;
   padding: 20px;
@@ -545,6 +546,21 @@ pre {
     height: auto;
   }
 
+.hero .glass{
+  display: flex;
+  flex-direction: column;
+}
+
+  .hero h1, .hero p{
+    text-align: center;
+  }
+
+  .hero-button{
+    float: none;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
   .directors .flex {
     flex-direction: column;
   }
@@ -594,6 +610,11 @@ pre {
     overflow: hidden;
   }
 
+  .service-cards {
+    justify-content: center;
+    align-items: center;
+  }
+
   .service-card {
     width: 150px;
     margin: 40px 10px;
@@ -634,6 +655,19 @@ pre {
   .hero-form {
     width: 300px;
   }
+
+.modal-text{
+font-size: xx-small;
+}
+
+.modal-text h1, .cert h1{
+font-size: small;
+}
+
+.cert h1, .services h1{
+  font-size: 2rem;
+  }
+
 }
 
 /* mobile */
