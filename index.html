@@ -20,20 +20,36 @@
   <body>
     <!-- Modal -->
 
-    <div id="myModal" class="modal glass my-5 text-center center">
+    <div id="myModal" class="modal text-center center">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <h1 class="font2 text-primary">Welcome to Linearcurve Architecture</h1>
+        <h1 class="font2 lg bold text-primary">Welcome to Linearcurve Architecture</h1>
         <p>“Design is a pattern followed by luscious creativity and is purely adored by the imagination that surrounds it… It is a complex prevailed” -author unknown</p>
-       
+        <div class="text-center">
+          <h1 class="text-primary lg bold font2">Company Establishment</h1>
+
+          <p class="text-dark text-center">
+            LinearCurve Architecture was established on 13th July 2020. Amid the
+            Coronavirus pandemic, we developed the company solely based on
+            future betterment. As the world had changed to accommodate the
+            pandemic, we had identified the many problems on the forefront of
+            traditional architecture. We, as experienced architectural
+            technologists have marked progressive solutions on producing
+            sustainability and clever planning on ensuring a better living
+            standard for our clientèle. LinearCurve is situated in two head
+            offices, in two separate provinces, to provide a large variety of
+            services to a larger audience of customers.
+          </p>
+        </div>
+        
+        <span class="close">&times;</span>
       </div>
     </div>
 
     <!-- Scroll to top -->
 
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">
-      Top
+      Top <i class="arrow up"></i>
     </button>
 
     <!-- Navbar -->
@@ -70,6 +86,11 @@
               <li class="hover">
                 <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
               </li>
+              <li>
+                <a href="contact.html" class="btn btn-outline2 hidden-nav"
+                  >Get a quote</a
+                >
+              </li>
             </ul>
           </nav>
           <nav class="page-nav flex">
@@ -79,11 +100,7 @@
                 <a href="projects.html">Projects & Services</a>
               </li>
               <li class="hover"><a href="contact.html">Contact</a></li>
-              <li>
-                <a href="contact.html" class="btn btn-outline2 hidden-nav"
-                  >Get a quote</a
-                >
-              </li>
+              
             </ul>
           </nav>
         </div>
@@ -111,7 +128,7 @@
     <!-- Directors -->
 
     <section class="directors container fade-in-fwd">
-      <div class="container flex">
+      <div class="flex">
         <div class="card flex card-d">
           <img src="./images/linearcurve-favicon.png"></img>
 
@@ -122,10 +139,11 @@
           <hr class="line" />
           <hr class="line" />
           <p>
-            Since January 2014, Muhammad Jhetam has attained a number of architectural qualifications while been in the service of 3 recognised architectural companies in Johannesburg and Durban. Since 2020, he has co-founded and directed LinearCurve Architecture with Mohammed Sheik and ever since gained additional experience in management and marketing skills as well as leadership qualities. 
+            Since January 2014, Muhammad Jhetam has attained a number of architectural<span id='dots'>...</span><span id='more'> qualifications while been in the service of 3 recognised architectural companies in Johannesburg and Durban. Since 2020, he has co-founded and directed LinearCurve Architecture with Mohammed Sheik and ever since gained additional experience in management and marketing skills as well as leadership qualities. 
 He has played a part of a number of projects specializing in residential and warehousing. With a positive attitude in the work environment, Muhammad has worked well in teams and individually producing quality services from inception to close out, ranging from timeous deadlines, design, detailing, sustainability and aesthetics. 
-His professional character allows for a smooth transition in gaining potential prospects and producing a professional successful business which ensures an improved architectural environment.
+His professional character allows for a smooth transition in gaining potential prospects and producing a professional successful business which ensures an improved architectural environment.</span>
           </p>
+          <button  onClick='readMore()' id="moreBtn" class=" btn">read more</button>
         </div>
         <div class="card flex card-d">
           <img src="./images/linearcurve-favicon.png"></img>
@@ -135,25 +153,11 @@ His professional character allows for a smooth transition in gaining potential p
           <hr class="line" />
           <hr class="line" />
           <p>
-            Our mission is what drives us to do everything possible to expand
-            human potential. We do that by creating groundbreaking sport
-            innovations, by making our products more sustainably, by building a
-            creative and diverse global team and by making a positive impact in
-            communities where we live and work.
-          </p>
-          <!-- <p>
-            Our mission is what drives us to do everything possible to expand
-            human potential.<span id="dots">...</span
-            ><span id="more">
-              We do that by creating groundbreaking sport innovations, by making
-              our products more sustainably, by building a creative and diverse
-              global team and by making a positive impact in communities where
-              we live and work.</span
-            >
-          </p>
-          <button onclick="readMore()" id="moreBtn" class="btn">
+            Since July 2018, Mohammed Sheik has embarked on an individual career<span id='dots2'>...</span><span id='more2'> path after having been in the service of four well known architectural practises for 30 years. He has played a key role on a wide spectrum of projects as both part of a team and individually managing large scale projects from inception to close out. His role as project architect on various significant projects, makes him ideally suited in filling the inspirations of his diverse client base, especially in terms of appraisal, design, aesthetics, ergonomics, construction, management, sustainability and delivery.</span></p>
+         
+          <button onclick="readMore2()" id="moreBtn2" class="btn">
             Read more
-          </button> -->
+          </button>
         </div>
       </div>
     </section>
@@ -178,22 +182,7 @@ His professional character allows for a smooth transition in gaining potential p
             for finances within a suitable timeframe.
           </p>
         </div>
-        <div class="text-center">
-          <h1 class="text-primary lg bold font2">Company Founding</h1>
-
-          <p class="text-dark text-center">
-            LinearCurve Architecture was established on 13th July 2020. Amid the
-            Coronavirus pandemic, we developed the company solely based on
-            future betterment. As the world had changed to accommodate the
-            pandemic, we had identified the many problems on the forefront of
-            traditional architecture. We, as experienced architectural
-            technologists have marked progressive solutions on producing
-            sustainability and clever planning on ensuring a better living
-            standard for our clientèle. LinearCurve is situated in two head
-            offices, in two separate provinces, to provide a large variety of
-            services to a larger audience of customers.
-          </p>
-        </div>
+        
       </div>
     </section>
 
@@ -301,9 +290,15 @@ His professional character allows for a smooth transition in gaining potential p
           and your reliance in any information on the site is solely at your own
           risk.
         </p>
-        <div class="flex">
+         <div class="flex">
           <p class="text-secondary">
-            <a href="www.arshadk.co.za" target="blank">Website by ArshadK</a>
+            <a href="www.arshadk.co.za">Website by ArshadK</a>
+          </p>
+          <p class="counter text-secondary">
+            <script
+              type="text/javascript"
+              src="./counter/counter.php?page=index"
+            ></script>
           </p>
         </div>
       </div>

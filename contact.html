@@ -19,7 +19,7 @@
     <!-- Scroll to top -->
 
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">
-      Top
+      Top <i class="arrow up"></i>
     </button>
 
     <!-- Navbar -->
@@ -56,6 +56,11 @@
               <li class="hover">
                 <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
               </li>
+              <li>
+                <a href="contact.html" class="btn btn-outline2 hidden-nav"
+                  >Get a quote</a
+                >
+              </li>
             </ul>
           </nav>
           <nav class="page-nav flex">
@@ -65,11 +70,6 @@
                 <a href="projects.html">Projects & Services</a>
               </li>
               <li class="hover"><a href="contact.html">Contact</a></li>
-              <li>
-                <a href="contact.html" class="btn btn-outline2 hidden"
-                  >Get a quote</a
-                >
-              </li>
             </ul>
           </nav>
         </div>
@@ -92,12 +92,17 @@
             d="M233.51 436.26C225.23 444.652 211.806 444.652 203.524 436.26L6.57832 236.693C-1.7014 228.302 -1.7014 214.699 6.57832 206.308L203.524 6.73903C211.806 -1.65097 225.23 -1.65097 233.51 6.73903L430.456 206.308C438.736 214.699 438.736 228.302 430.456 236.693L233.51 436.26Z"
             fill="white"
           />
-          <foreignobject x="90 " y="100" width="250" height="250">
+          <foreignobject x="95 " y="105" width="250" height="250">
             <div class="md font2">Muhammed Jhetam</div>
             <div class="bold">
               Architectural Technologist Multi-disciplinary Draughtsman
             </div>
             <div>065 856 6817</div>
+            <p>
+              <a href="mailto:info.linearcurve@gmail.com" class="contact-email">
+                info.linearcurve@gmail.com
+              </a>
+            </p>
             <div>Ladysmith</div>
             <div>Kwazulu Natal</div>
             <div>3370</div>
@@ -115,12 +120,17 @@
             d="M233.51 436.26C225.23 444.652 211.806 444.652 203.524 436.26L6.57832 236.693C-1.7014 228.302 -1.7014 214.699 6.57832 206.308L203.524 6.73903C211.806 -1.65097 225.23 -1.65097 233.51 6.73903L430.456 206.308C438.736 214.699 438.736 228.302 430.456 236.693L233.51 436.26Z"
             fill="white"
           />
-          <foreignobject x="90" y="100" width="250" height="250">
+          <foreignobject x="95" y="150" width="250" height="250">
             <div class="md font2">Mohammed Sheik</div>
             <div class="bold">
               Senior Professional Architectural Technologist
             </div>
             <div>062 642 8305</div>
+            <p>
+              <a href="mailto:info.linearcurve@gmail.com" class="contact-email">
+                info.linearcurve@gmail.com
+              </a>
+            </p>
             <div>Middleburg</div>
             <div>Mpumalanga</div>
             <div>1055</div>
@@ -138,7 +148,7 @@
             d="M233.51 436.26C225.23 444.652 211.806 444.652 203.524 436.26L6.57832 236.693C-1.7014 228.302 -1.7014 214.699 6.57832 206.308L203.524 6.73903C211.806 -1.65097 225.23 -1.65097 233.51 6.73903L430.456 206.308C438.736 214.699 438.736 228.302 430.456 236.693L233.51 436.26Z"
             fill="white"
           />
-          <foreignobject x="90 " y="100" width="250" height="250">
+          <foreignobject x="95 " y="125" width="250" height="250">
             <section>
               <div>
                 <div class="contact-form">
@@ -194,7 +204,7 @@
             d="M233.51 436.26C225.23 444.652 211.806 444.652 203.524 436.26L6.57832 236.693C-1.7014 228.302 -1.7014 214.699 6.57832 206.308L203.524 6.73903C211.806 -1.65097 225.23 -1.65097 233.51 6.73903L430.456 206.308C438.736 214.699 438.736 228.302 430.456 236.693L233.51 436.26Z"
             fill="white"
           />
-          <foreignobject x="90 " y="100" width="250" height="250">
+          <foreignobject x="95 " y="105" width="250" height="250">
             <section>
               <div>
                 <div class="contact-form">
@@ -236,6 +246,20 @@
             </section>
           </foreignobject>
         </svg>
+        <script language="JavaScript">
+          var frmvalidator = new Validator('myemailform');
+          frmvalidator.addValidation('name', 'req', 'Please provide your name');
+          frmvalidator.addValidation(
+            'email',
+            'req',
+            'Please provide your email'
+          );
+          frmvalidator.addValidation(
+            'email',
+            'email',
+            'Please enter a valid email address'
+          );
+        </script>
       </div>
     </div>
 
